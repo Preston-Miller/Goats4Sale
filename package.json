@@ -1,0 +1,16 @@
+{
+  "name": "goats4sale",
+  "version": "1.0.0",
+  "description": "Simple goats-for-sale web app - security test target",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node server.js"
+  },
+  "dependencies": {
+    "express": "4.17.1",
+    "lodash": "4.17.20",
+    "jsonpath-plus": "7.2.0",
+    "ejs": "3.1.6"
+  }
+}

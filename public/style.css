@@ -1,0 +1,11 @@
+* { box-sizing: border-box; }
+body { font-family: system-ui, sans-serif; max-width: 900px; margin: 0 auto; padding: 1rem; }
+header { text-align: center; margin-bottom: 2rem; border-bottom: 1px solid #ccc; }
+h1 { margin: 0; color: #333; }
+.grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(240px, 1fr)); gap: 1rem; }
+.card { border: 1px solid #ddd; padding: 1rem; border-radius: 8px; }
+.card.unavailable { opacity: 0.7; }
+.price { font-weight: bold; color: #2a7; }
+.btn { display: inline-block; margin-top: 0.5rem; padding: 0.5rem 1rem; background: #2a7; color: white; text-decoration: none; border-radius: 4px; }
+.unavail { color: #888; }
+footer { margin-top: 2rem; text-align: center; color: #666; font-size: 0.9rem; }

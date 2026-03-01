@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title><%= title %> - Goats for Sale</title>
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+  <header>
+    <h1>Goats4Sale</h1>
+    <p>Quality goats for sale — dairy, meat, and companion</p>
+  </header>
+  <main>
+    <section class="goats">
+      <h2>Goats for Sale</h2>
+      <div class="grid">
+        <% goats.forEach(function(g) { %>
+          <div class="card <%= g.available ? '' : 'unavailable' %>">
+            <h3><%= g.name %></h3>
+            <p>Breed: <%= g.breed %></p>
+            <p>Age: <%= g.age %> years</p>
+            <p>Location: <%= g.location %></p>
+            <p class="price">$<%= g.price %></p>
+            <% if (g.available) { %>
+              <a href="/buy?id=<%= g.id %>" class="btn">Buy Now</a>
+            <% } else { %>
+              <span class="unavail">Sold</span>
+            <% } %>
+          </div>
+        <% }); %>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <p>Goats4Sale &copy; 2025 - Security Test Application</p>
+  </footer>
+</body>
+</html>

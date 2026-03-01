@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Buy a Goat</title>
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+  <header>
+    <h1>Goats4Sale</h1>
+    <a href="/">← Back to listings</a>
+  </header>
+  <main>
+    <h2>Buy <%= goat ? goat.name : 'Goat' %></h2>
+    <% if (goat) { %>
+      <form action="/api/buy" method="POST">
+        <input type="hidden" name="goatId" value="<%= goat.id %>">
+        <label>Quantity: <input type="number" name="quantity" min="1" value="1"></label>
+        <button type="submit">Confirm purchase</button>
+      </form>
+    <% } else { %>
+      <p>Goat not found.</p>
+    <% } %>
+  </main>
+</body>
+</html>
