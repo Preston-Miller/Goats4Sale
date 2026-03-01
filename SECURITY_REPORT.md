@@ -1,6 +1,6 @@
 # VibeSec Security Report
 Repo: Preston-Miller/Goats4Sale
-Scanned: 2026-03-01 01:45:54 UTC
+Scanned: 2026-03-01 01:47:34 UTC
 Issues Found: 4
 
 ## [SEV-001] CRITICAL -- Generic secret
