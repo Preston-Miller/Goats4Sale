@@ -9,6 +9,16 @@ npm install
 npm start
 ```
 
+## Git workflow (pull then push)
+
+1. **Pull first**: `git pull`
+2. Make your changes and commit.
+3. **Push**: `git push`
+
+If push is rejected (e.g. someone else pushed), run `git pull` again then `git push`.
+
+**Optional (recommended):** Run `git config pull.rebase true` once so pull rebases instead of merging—keeps history linear and avoids push rejections.
+
 Open http://localhost:3000
 
 ## Intentional vulnerabilities (for scanner validation)
