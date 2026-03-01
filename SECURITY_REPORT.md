@@ -1,6 +1,6 @@
 # VibeSec Security Report
 Repo: Preston-Miller/Goats4Sale
-Scanned: 2026-03-01 01:47:34 UTC
+Scanned: 2026-03-01 01:49:24 UTC
 Issues Found: 4
 
 ## [SEV-001] CRITICAL -- Generic secret
@@ -9,7 +9,7 @@ Issues Found: 4
 **Type:** JavaScript
 **Line:** 16
 **Evidence:** `API_KEY = process.env.API_KEY`
-**Risk:** The API key is hardcoded in the source code instead of being securely stored. An attacker accesses the source code and retrieves the API key.
+**Risk:** The API key is hardcoded in the source code instead of being securely stored. An attacker retrieves the API key from the source code.
 
 **OWASP Category:** Secrets Management
 **OWASP References:**
@@ -29,7 +29,7 @@ Issues Found: 4
 **Type:** JavaScript
 **Line:** 17
 **Evidence:** `PASSWORD = process.env.DB_PASSWORD`
-**Risk:** The database password is hardcoded in the source code instead of being securely stored. An attacker accesses the source code and retrieves the database password.
+**Risk:** The database password is hardcoded in the source code instead of being securely stored. An attacker retrieves the database password from the source code.
 
 **OWASP Category:** Secrets Management
 **OWASP References:**
@@ -49,7 +49,7 @@ Issues Found: 4
 **Type:** JavaScript
 **Line:** 18
 **Evidence:** `SECRET = process.env.JWT_SECRET`
-**Risk:** The JWT secret is hardcoded in the source code instead of being securely stored. An attacker accesses the source code and retrieves the JWT secret.
+**Risk:** The JWT secret is hardcoded in the source code instead of being securely stored. An attacker retrieves the JWT secret from the source code.
 
 **OWASP Category:** Secrets Management
 **OWASP References:**
@@ -69,7 +69,7 @@ Issues Found: 4
 **Type:** JavaScript
 **Line:** 21
 **Evidence:** `SECRET = process.env.STRIPE_SECRET`
-**Risk:** The Stripe secret key is hardcoded in the source code instead of being securely stored. An attacker accesses the source code and retrieves the Stripe secret key.
+**Risk:** The Stripe secret key is hardcoded in the source code instead of being securely stored. An attacker retrieves the Stripe secret key from the source code.
 
 **OWASP Category:** Secrets Management
 **OWASP References:**
